@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>easyAi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark">
+
+  <!-- ✅ MAIN CHAT SCREEN -->
+  <div id="mainScreen" class="screen active">
+
+    <div class="header">
+      <span class="logo">easyAi</span>
+
+      <div class="controls">
+        <select id="modelSelect">
+          <option value="">Select Model</option>
+          <option value="openai">ChatGPT</option>
+          <option value="gemini">Gemini 2.5 Flash</option>
+        </select>
+
+        <button id="themeToggle" title="Toggle Theme">🌙</button>
+        <button id="openSettings" title="About">⚙️</button>
+      </div>
+    </div>
+
+    <div id="chat"></div>
+
+    <div id="loading" class="loading hidden">
+      <span class="thinking-text">Thinking</span>
+      <span class="dot">.</span>
+      <span class="dot">.</span>
+      <span class="dot">.</span>
+    </div>
+
+    <div class="inputBox">
+      <textarea
+        id="msg"
+        rows="1"
+        placeholder="Type message and press Enter..."
+      ></textarea>
+    </div>
+
+    <!-- ✅ ADS -->
+    <div id="ad">
+      <script type="text/javascript">
+        atOptions = {
+          'key' : 'b197903a5a04b6fefe58ebef82ab0afc',
+          'format' : 'iframe',
+          'height' : 60,
+          'width' : 468,
+          'params' : {}
+        };
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/b197903a5a04b6fefe58ebef82ab0afc/invoke.js"></script>
+    </div>
+
+  </div>
+
+
+  <!-- ✅ SETTINGS / ABOUT SCREEN -->
+  <div id="settingsScreen" class="screen">
+
+    <div class="header">
+      <button id="backBtn" title="Back">←</button>
+      <span class="logo">About easyAi</span>
+    </div>
+
+    <div class="settingsContent">
+
+      <h2>👋 Welcome to easyAi</h2>
+
+      <p>
+        easyAi is your smart AI chat assistant.  
+        Instantly chat with ChatGPT or Gemini using your own API key.  
+        Fast • Secure • Private
+      </p>
+
+      <div class="devBox">
+        <p><b>👨‍💻 Developer:</b> Himanshu Sharma</p>
+
+        <p>
+          <b>🌐 GitHub:</b><br>
+          <a href="https://github.com/himanshu11399/easyai-extension.git" target="_blank">
+            github.com/YOUR_GITHUB_USERNAME
+          </a>
+        </p>
+      </div>
+
+      <p class="tip">
+        💡 Tip: You can switch AI models anytime using the dropdown on the home screen.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <script src="popup.js"></script>
+
+</body>
+</html>
